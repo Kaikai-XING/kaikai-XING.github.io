@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kaikai Xing - Full Stack Data Professional</title>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,6 +38,11 @@
         h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        h2 i {
+            margin-right: 10px;
         }
         ul {
             list-style-type: none;
@@ -53,6 +60,34 @@
             text-align: center;
             margin-top: 10px;
         }
+        .skills-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 20px;
+            margin: 5px 0;
+        }
+        .skills-bar div {
+            text-align: center;
+            padding: 5px;
+            color: white;
+            border-radius: 20px;
+        }
+        .python {
+            width: 90%;
+            background-color: #4CAF50;
+        }
+        .sql {
+            width: 85%;
+            background-color: #2196F3;
+        }
+        .r {
+            width: 70%;
+            background-color: #f44336;
+        }
+        .vba {
+            width: 65%;
+            background-color: #ff9800;
+        }
     </style>
 </head>
 <body>
@@ -64,51 +99,51 @@
 
     <div class="container">
         <section>
-            <h2>Contact Information</h2>
-            <p><strong>Phone:</strong> +33(0)648164100</p>
-            <p><strong>Email:</strong> kaikai.xing.fl@gmail.com</p>
-            <p><strong>Location:</strong> Paris, France</p>
+            <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+            <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +33(0)648164100</p>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> kaikai.xing.fl@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Paris, France</p>
         </section>
 
         <section>
-            <h2>Work Experience</h2>
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
 
             <h3>Data Analyst (Engineer), Green Panda Games (Ubisoft Mobile, Paris, France)</h3>
             <p><em>07.2019 to 09.2024 | 5+ Years</em></p>
             <ul>
-                <li>Collaborated with marketing, producers, and game designers to develop KPIs and set up dashboards.</li>
-                <li>Streamlined data analytics workflow, integrated it with the game release cycle.</li>
-                <li>Established AB test framework and telemetry design principles.</li>
-                <li>Developed a Python-based report automation tool using Confluence and Tableau APIs.</li>
-                <li>Led the migration of ETL jobs and coached analysts on Airflow, DBT, and Git workflows.</li>
-                <li>Promoted data culture through knowledge sharing and documentations.</li>
+                <li><i class="fas fa-chart-line"></i> Collaborated with marketing, producers, and game designers to develop KPIs and set up dashboards.</li>
+                <li><i class="fas fa-sync-alt"></i> Streamlined data analytics workflow, integrated it with the game release cycle.</li>
+                <li><i class="fas fa-vial"></i> Established AB test framework and telemetry design principles.</li>
+                <li><i class="fas fa-code"></i> Developed a Python-based report automation tool using Confluence and Tableau APIs.</li>
+                <li><i class="fas fa-database"></i> Led the migration of ETL jobs and coached analysts on Airflow, DBT, and Git workflows.</li>
+                <li><i class="fas fa-user-graduate"></i> Promoted data culture through knowledge sharing and documentations.</li>
             </ul>
 
             <h3>Part-Time Python & SQL Tutor, EM Lyon Business School (Paris, France)</h3>
             <p><em>10.2022 to 03.2023 | 6 Months</em></p>
             <ul>
-                <li>Collaborated with a professor to design course content for Python and SQL.</li>
-                <li>Adjusted teaching methods based on student feedback and designed case studies.</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> Collaborated with a professor to design course content for Python and SQL.</li>
+                <li><i class="fas fa-adjust"></i> Adjusted teaching methods based on student feedback and designed case studies.</li>
             </ul>
 
             <h3>Big Data Intern, The Nielsen Company (Shanghai, China)</h3>
             <p><em>04.2019 to 07.2019 | 3 Months</em></p>
             <ul>
-                <li>Worked on a market research project for China’s lubricating oil market.</li>
-                <li>Streamlined data cleaning process using Python scripts.</li>
-                <li>Contributed to machine learning model performance evaluation.</li>
+                <li><i class="fas fa-flask"></i> Worked on a market research project for China’s lubricating oil market.</li>
+                <li><i class="fas fa-terminal"></i> Streamlined data cleaning process using Python scripts.</li>
+                <li><i class="fas fa-chart-bar"></i> Contributed to machine learning model performance evaluation.</li>
             </ul>
 
             <h3>System Analyst, OpenText (Shanghai, China)</h3>
             <p><em>10.2016 to 08.2018 | 1 Year and 10 Months</em></p>
             <ul>
-                <li>Collaborated with sales and engineering teams on EDI projects for OEMs and suppliers.</li>
-                <li>Developed Python, VBA, and Excel automation tools to streamline processes.</li>
+                <li><i class="fas fa-project-diagram"></i> Collaborated with sales and engineering teams on EDI projects for OEMs and suppliers.</li>
+                <li><i class="fas fa-tools"></i> Developed Python, VBA, and Excel automation tools to streamline processes.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Education</h2>
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
             <h3>Master's in Digital Marketing & Data Science</h3>
             <p><em>EMLyon Business School | 09.2018 to 01.2020</em></p>
 
@@ -117,19 +152,36 @@
         </section>
 
         <section>
-            <h2>Technical Skills</h2>
+            <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
             <ul>
-                <li><strong>Programming:</strong> Python, SQL, R, VBA (Excel)</li>
-                <li><strong>Tools:</strong> GCP (BigQuery, Firebase, GCS), AWS (Redshift, S3, MWAA), dbt, Airflow, Tableau, Git</li>
+                <li><i class="fas fa-code"></i> <strong>Programming:</strong> Python, SQL, R, VBA (Excel)</li>
+                <li><i class="fas fa-cogs"></i> <strong>Tools:</strong> GCP (BigQuery, Firebase, GCS), AWS (Redshift, S3, MWAA), dbt, Airflow, Tableau, Git</li>
             </ul>
+            <h3>Proficiency</h3>
+            <p>Python</p>
+            <div class="skills-bar">
+                <div class="python">90%</div>
+            </div>
+            <p>SQL</p>
+            <div class="skills-bar">
+                <div class="sql">85%</div>
+            </div>
+            <p>R</p>
+            <div class="skills-bar">
+                <div class="r">70%</div>
+            </div>
+            <p>VBA</p>
+            <div class="skills-bar">
+                <div class="vba">65%</</div>
+            </div>
         </section>
 
         <section>
-            <h2>Languages</h2>
+            <h2><i class="fas fa-language"></i> Languages</h2>
             <ul>
-                <li><strong>Chinese:</strong> Native</li>
-                <li><strong>English:</strong> Fluent</li>
-                <li><strong>French:</strong> Beginner</li>
+                <li><i class="fas fa-globe"></i> <strong>Chinese:</strong> Native</li>
+                <li><i class="fas fa-globe"></i> <strong>English:</strong> Fluent</li>
+                <li><i class="fas fa-globe"></i> <strong>French:</strong> Beginner</li>
             </ul>
         </section>
     </div>
